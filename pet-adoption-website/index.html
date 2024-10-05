@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pet Adoption Application to help you find your new best friend.">
+    <title>Pet Adoption Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Pet Adoption Application</h1>
+
+    </header>
+
+    <!-- Main Content Section -->
+   <!-- Main content section -->
+   <main>
+    <!-- Image of cute puppy -->
+    <img src="./images/Dog.jpg" alt="Cute puppy waiting for adoption" width="300" />
+
+    <!-- Adoption form -->
+    <form action="#" method="post" aria-labelledby="form-heading">
+      <fieldset>
+        <legend id="form-heading">Personal Information</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" aria-required="true" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" aria-required="true" required /><br /><br />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" aria-required="true" required /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Pet Preference</legend>
+
+        <label for="pet-type">Type of Pet:</label>
+        <select id="pet-type" name="pet-type" aria-required="true" required>
+          <option value="">Select one</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="bird">Bird</option>
+          <option value="other">Other</option>
+        </select><br /><br />
+
+        <label>Age Range:</label><br />
+        <input type="radio" id="young" name="age" value="young" aria-required="true" required />
+        <label for="young">Young</label><br />
+        <input type="radio" id="adult" name="age" value="adult" />
+        <label for="adult">Adult</label><br />
+        <input type="radio" id="senior" name="age" value="senior" />
+        <label for="senior">Senior</label><br /><br />
+
+        <label for="reason">Why do you want to adopt a pet?</label><br />
+        <textarea id="reason" name="reason" rows="4" cols="50" aria-required="true" required></textarea>
+      </fieldset>
+
+      <br />
+      <input type="submit" value="Submit Application" />
+    </form>
+
+    <!-- Video Section -->
+    <section>
+      <h2>Watch Cute Puppy Videos</h2>
+      <video width="320" height="240" controls>
+        <source src="./media/3191251-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <!-- Footer for contact or additional links -->
+  <footer>
+    <p>&copy; 2024 Pet Adoption. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
